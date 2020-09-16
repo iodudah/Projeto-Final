@@ -1,0 +1,238 @@
+html,
+body {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+section {
+    float: left;
+    padding: 3% 0%;
+}
+
+/*----- HEADER -----*/
+header {
+    background-color: rgb(2, 15, 32);
+    color: whitesmoke;
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    z-index: 12;
+    top: 0px;
+}
+
+#logo {
+    width: 4%;
+    position: absolute;
+    top: 2px;
+    padding-left: 4px;
+}
+
+#menu {
+    float: right;
+    padding-right: 2%;
+    list-style: none;
+    margin-top: 0px;
+    font-size: 20px;
+}
+
+li {
+    float: left;
+    padding: 20px 10px 20px 10px;
+}
+
+li:hover {
+    background-color: rgb(132, 150, 188);
+}
+
+/*----- CAPA -----*/
+#capa {
+    background: url("img/01.jpg");
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    background-size: cover;
+    top: 60px;
+    padding-bottom: 8.5%;
+}
+
+#titulo {
+    color: whitesmoke;
+    padding-top: 15%;
+    font-size: 70px;
+    text-shadow: -2px 2px black;
+    margin: 0%;
+}
+
+#subtitulo {
+    color: whitesmoke;
+    margin: 0% 20%;
+    padding-left: 0% 5%;
+    text-shadow: -1px 1px black;
+    border-top: 3px solid whitesmoke;
+    font-size: 40px;
+}
+
+/*----- ODS -----*/
+#video {
+    padding: 5% 0 0%;
+}
+
+/*----- NOTICIAS -----*/
+
+#acao {
+    color: whitesmoke;
+    border: 3px solid whitesmoke;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 25px;
+    text-shadow: -1px 1px black;
+}
+
+#acao:hover {
+    background-color: rgb(132, 150, 188);
+    border: 0px;
+}
+
+/*----- SOBRE -----*/
+#sobre {
+    width: 100%;
+}
+
+/*----- COLUNAS -----*/
+.coluna {
+    position: relative;
+    float: left;
+    padding: 0% 2% 2%;
+}
+
+.um {
+    width: 96%;
+}
+
+.dois {
+    width: 46%;
+}
+
+.tres {
+    width: 29%;
+}
+
+/*----- TEXTOS -----*/
+.centralizado {
+    text-align: center;
+}
+
+.justificado {
+    text-align: justify;
+    font-size: 20px;
+}
+
+.textopadrao {
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+h3 {
+    margin: 0%;
+    padding: 2% 0%;
+    font-size: 40px;
+}
+
+h4 {
+    font-size: 30px;
+    padding: 2% 0%;
+    margin: 0;
+}
+
+p {
+    margin: 0%;
+    font-size: 20px;
+}
+
+/*----- IMAGEM -----*/
+.imagem {
+    width: 100%;
+    height: 30%;
+    padding: 4% 0%;
+}
+
+/*----- LINKS -----*/
+a {
+    text-align: center;
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+/*----- CORPO -----*/
+#ods {
+    color: whitesmoke;
+    background-color: #1C1C1C;
+}
+
+#metas {
+    color: whitesmoke;
+    background-color: #363636;
+}
+
+#noticias {
+    color: whitesmoke;
+    background-color: #1C1C1C;
+}
+
+#sobre {
+    color: whitesmoke;
+    background-color: #363636;
+}
+
+/*----- RESPONSIVIDADE -----*/
+@media all and (max-width: 768px) {
+
+    .coluna,
+    .dois,
+    .tres {
+        display: block;
+        width: 80%;
+        padding: 0;
+        margin: 10px auto;
+        float: none;
+    }
+
+    header {
+        position: fixed;
+        width: 100%;
+        text-align: center;
+    }
+
+    #logo {
+        width: 50px;
+        margin: 0px;
+        transform: translateX(-50%);
+    }
+
+    #titulo {
+        font-size: 40px;
+        padding: 15% 2.5% 0%;
+    }
+
+    #subtitulo {
+        font-size: 25px;
+        padding: 0% 5%;
+        margin: 10%;
+    }
+
+    #menu {
+        visibility: hidden;
+    }
+
+    #acao {
+        color: whitesmoke;
+        font-size: 25px;
+        text-shadow: -1px 1px black;
+        text-decoration: underline;
+        border: 3px solid transparent;
+        border-radius: 8px;
+    }
+
+}
